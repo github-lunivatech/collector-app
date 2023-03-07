@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "luniva 360 collector",
+    "slug": "luniva-360-collector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "luniva360.collector",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "icon": "./assets/96-96.png",
+
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBHsFY2CvPEIBknY3KKQZBjUNPxgLqWV2U"
+        }
+      },
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/96-96.png",
+          "color": "#ffffff",
+          "sounds": ["./assets/sounds/mixkit-message-pop-alert-2354.wav"]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "544422a3-c0ae-4574-9167-2b2ae74c26c2"
+      }
+    }
+  }
+}
